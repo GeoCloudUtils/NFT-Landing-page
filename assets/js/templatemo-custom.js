@@ -48,6 +48,8 @@
     });
   }
 
+  
+
 
   // Menu elevator animation
   $('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function() {
