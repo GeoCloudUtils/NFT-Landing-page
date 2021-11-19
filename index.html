@@ -24,9 +24,44 @@
 -->
 </head>
 
+<style>
+  .card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+  }
+
+  /* Back to top */
+  .backtotop {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
+    display: none;
+  }
+
+  .backtotop i {
+    color: #ff7657;
+    text-align: center;
+    font-size: 25px;
+    line-height: 65px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-box-shadow: 0 31px 35px rgba(0, 0, 0, .1);
+    box-shadow: 0 31px 35px rgba(0, 0, 0, .1);
+  }
+
+  .backtotop:hover {
+    cursor: pointer;
+  }
+</style>
+
 
 <body>
-
+  <div class="backtotop" style="display: block;">
+    <a href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+  </div>
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
@@ -57,6 +92,7 @@
               <li class="scroll-to-section"><a href="#concept">Concept</a></li>
               <li class="scroll-to-section"><a href="#benefits">Benefits</a></li>
               <li class="scroll-to-section"><a href="#roadmap">Roadmap</a></li>
+              <li class="scroll-to-section"><a href="#roadmap"><i class="fab fa-twitter"></i></a></li>
               <li class="scroll-to-section">
                 <div class="main-red-button"><a href="#contact">Contact Now</a></div>
               </li>
@@ -77,15 +113,9 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <h1 class="text-white">mOrphy</h1>
-                <h1 class="text-white">Design your EGO.</h1>
-              </div>
-            </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 mx-auto">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/right.png" alt="team meeting">
+                <img src="assets/images/morphMain.png" alt="team meeting">
               </div>
             </div>
           </div>
@@ -97,12 +127,7 @@
   <div id="concept" class="about-us section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
-          <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <img src="assets/images/about_us.png" alt="person graphic">
-          </div>
-        </div>
-        <div class="col-lg-8 align-self-center">
+        <div class="col-lg-8 align-self-center offset-lg-1">
           <div class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="section-heading">
               <h2>What is an alter <em>ego?</em><br> Unique to you</em> think of it &amp; <span>as your meta</span>
@@ -119,7 +144,7 @@
         <div class="our-portfolio section">
           <div class="container">
             <div class="row">
-              <div class="col-lg-3 col-sm-6 ">
+              <div class="col-lg-3 col-sm-6 mx-auto">
                 <a href="#">
                   <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                     <div class="hidden-content w-100 mx-auto">
@@ -132,7 +157,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-sm-6">
+              <div class="col-lg-3 col-sm-6 mx-auto">
                 <a href="#">
                   <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
                     <div class="hidden-content w-100 mx-auto">
@@ -145,7 +170,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-sm-6">
+              <div class="col-lg-3 col-sm-6 mx-auto">
                 <a href="#">
                   <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                     <div class="hidden-content w-100 mx-auto">
@@ -154,19 +179,6 @@
                     </div>
                     <div class="showed-content">
                       <img src="assets/images/MetaSingularity_A/MetaSingularity_A.png" alt="">
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <a href="#">
-                  <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-                    <div class="hidden-content w-100 mx-auto">
-                      <h4>Nft name</h4>
-                      <p>Nft description!.</p>
-                    </div>
-                    <div class="showed-content">
-                      <img src="assets/images/MetaSingularity_4/MetaSingularity_4.png" alt="">
                     </div>
                   </div>
                 </a>
@@ -181,89 +193,82 @@
   <div id="benefits" class="section mt-5">
     <div class="container-fluid mt-5">
       <section>
-        <div class="col-sm-12 col-md-10 offset-md-1 mt-5">
-          <div class="wow fadeInLeft w-100" data-wow-duration="1s" data-wow-delay="0.2s">
-            <div class="section-heading-2 mt-5 mx-auto">
-              <h2 class="text-white mx-auto">Your metaverse alter ego unlocks benefits</h2>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-8 mx-auto mt-3">
+              <div class="card bg-transparent border-0">
+                <div class="card-horizontal">
+                  <div class="card-body w-75">
+                    <h4 class="card-title font-weight-bold text-uppercase text-white wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">Your metaverse alter ego unlocks benefits  </h4>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row">
-            <!-- Gallery Item Loop  -->
-            <div onclick="changeActiveState(1)" class="col-md-6 col-lg-4 py-4" data-toggle="modal"
-              data-target="#exampleModal">
-              <div class="gallery-container bg-light rounded-3">
-                <img src="assets/images/MetaSingularity_4/MetaSingularity_4.png" alt="Alt Name" class="image">
-                <div class="overlay">
-                  <p class="text p-2">
-                    <span>Gallery Title</span><br>
-                    <span class="small">Gallery Sub Title</span>
-                  </p>
+            <div class="col-lg-8 mx-auto mt-3">
+              <div class="card wow bounceInLeft">
+                <div class="card-horizontal">
+                  <div class="img-square-wrapper w-25 m-2">
+                    <img class="" src="assets/images/NFT/Original_Version.png" alt="Card image cap">
+                  </div>
+                  <div class="card-body w-75">
+                    <h4 class="card-title font-weight-bold text-uppercase">Cross Chain Album </h4>
+                    <p class="card-text">All your NFT’s in one place to show, sort and share as you please
+                      Showing off
+                      Sharing with friends
+                      Impress the meta neighbour
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <!--  End  -->
-            <div onclick="changeActiveState(2)" class="col-md-6 col-lg-4 py-4" data-toggle="modal"
-              data-target="#exampleModal">
-              <div class="gallery-container bg-light rounded-3">
-                <img src="assets/images/MetaSingularity_A/MetaSingularity_A.png" alt="Alt Name" class="image">
-                <div class="overlay">
-                  <p class="text p-2">
-                    <span>Gallery Title 2</span><br>
-                    <span class="small">Gallery Sub Title 2</span>
-                  </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 mx-auto mt-3">
+              <div class="card wow bounceInRight border-warning border-4">
+                <div class="card-horizontal">
+                  <div class="card-body w-75">
+                    <h4 class="card-title r-0 text-uppercase">Benefits from other projects</h4>
+                    <p class="card-text">For many projects proof of personhood is relevant so they can drop assets to
+                      involve people in the project early stages.
+                      We reach out for this benefits
+                      They are yours to grab if you want them.
+                      No need for offline proof of humanity, this should be done all onchain.
+                      m0rphy is proof enough that you are a unique person that many good projects will want to include
+                      in their drops.
+                    </p>
+                  </div>
+                  <div class="img-square-wrapper w-25 m-2">
+                    <img class="" src="assets/images/benefits.png" alt="Card image cap">
+                  </div>
                 </div>
               </div>
             </div>
-            <div onclick="changeActiveState(3)" class="col-md-6 col-lg-4 py-4" data-toggle="modal"
-              data-target="#exampleModal">
-              <div class="gallery-container bg-light rounded-3">
-                <img src="assets/images/MetaSingularity_W_BIG/MetaSingularity_W_BIG.png" alt="Alt Name" class="image">
-                <div class="overlay">
-                  <p class="text p-2">
-                    <span>Gallery Title 3</span><br>
-                    <span class="small">Gallery Sub Title 3</span>
-                  </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 mx-auto mt-3">
+              <div class="card wow bounceInLeft">
+                <div class="card-horizontal">
+                  <div class="img-square-wrapper w-25 m-2">
+                    <img class=""
+                      src="https://static.wixstatic.com/media/11062b_a2485e3503c647fca921189dbb7b5105f000.jpg/v1/fill/w_354,h_297,al_c,q_80,usm_0.33_1.00_0.00/11062b_a2485e3503c647fca921189dbb7b5105f000.webp"
+                      alt="Card image cap">
+                  </div>
+                  <div class="card-body w-75">
+                    <h4 class="card-title font-weight-bold text-uppercase">And of course m0rphy has DAO DNA.</h4>
+                    <p class="card-text">All future development will be done via DAO as this is the way of the
+                      metaverse. That means you get a say in how we roll.
+                      Or find other m0rphs based on rating and on-chain asset behaviour and form smaller groups and
+                      DAO’s
+
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div onclick="changeActiveState(3)" class="col-md-6 col-lg-4 py-4" data-toggle="modal"
-              data-target="#exampleModal">
-              <div class="gallery-container bg-light rounded-3">
-                <img src="assets/images/MetaSingularity_ZBig/MetaSingularity_ZBig.jpg" alt="Alt Name" class="image">
-                <div class="overlay">
-                  <p class="text p-2">
-                    <span>Gallery Title 3</span><br>
-                    <span class="small">Gallery Sub Title 3</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div onclick="changeActiveState(3)" class="col-md-6 col-lg-4 py-4" data-toggle="modal"
-              data-target="#exampleModal">
-              <div class="gallery-container bg-light rounded-3">
-                <img src="assets/images/MetaSingularity_ZBigOK/MetaSingularity_ZBigOK.png" alt="Alt Name" class="image">
-                <div class="overlay">
-                  <p class="text p-2">
-                    <span>Gallery Title 3</span><br>
-                    <span class="small">Gallery Sub Title 3</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div onclick="changeActiveState(3)" class="col-md-6 col-lg-4 py-4" data-toggle="modal"
-              data-target="#exampleModal">
-              <div class="gallery-container bg-light rounded-3">
-                <img src="assets/images/MetaSingularity_ZBigOK/MetaSingularity_ZBigOK.png" alt="Alt Name" class="image">
-                <div class="overlay">
-                  <p class="text p-2">
-                    <span>Gallery Title 3</span><br>
-                    <span class="small">Gallery Sub Title 3</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-            </div>
+          </div>
+        </div>
       </section>
     </div>
   </div>
@@ -349,16 +354,16 @@
   <div id="roadmap" class="road-map w-100 section mt-5">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 offset-lg-3">
-          <div class="section-heading-3  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h2 class="text-white">Your metaverse alter ego &amp; unlocks <span>benefits </span></h2>
+        <div class="col-lg-12">
+          <div class="wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <h2 class="text-white">ROADMAP</span></h2>
           </div>
         </div>
       </div>
-      <div class="row mt-5">
+      <div class="row mt-5 w-100 ">
         <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-          <div class="showed-content w-75 mx-auto round-3">
-            <img class="rounded-3" src="assets/images/roadmap.png" alt="">
+          <div class="showed-content w-100 mx-auto round-3">
+            <img class="rounded-3" src="assets/images/roadMapFinal.jpg" alt="">
           </div>
         </div>
       </div>
@@ -368,58 +373,32 @@
   <div id="contact" class="contact-us section mt-5">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+        <div class="col-lg-6 align-self-center" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          
           <div class="section-heading">
-            <h2>Donec Eros Magna, Hendrerit Sit Amet Commodo Et, Blandit Cursus Erat.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor incididunt ut labore
-              et dolores</p>
-            <div class="phone-info">
-              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="#">010-020-0340</a></span></h4>
-            </div>
-            <div class="media mt-5">
-              <!-- Section: Social media -->
-              <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-facebook-f"></i></a>
-
-                <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-twitter"></i></a>
-
-                <!-- Google -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-google"></i></a>
-
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-instagram"></i></a>
-
-                <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-linkedin-in"></i></a>
-
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-github"></i></a>
-              </section>
-              <!-- Section: Social media -->
-            </div>
+            <form id="contact" action="" class="bg-dark" method="post">
+              <div class="row">
+                <h1 class="mb-5 text-white">Email subscription</h1>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
+                      required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="main-button ">Submit</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-        <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
+        <div class="col-lg-6" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <form id="contact" action="" class="bg-dark" method="post">
             <div class="row">
-              <div class="col-lg-6">
-                <fieldset>
-                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required="">
-                </fieldset>
-              </div>
-              <div class="col-lg-6">
-                <fieldset>
-                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required="">
-                </fieldset>
-              </div>
+              <h1 class="mb-5 text-white">Do you have questions?
+                Leave us a message.</h1>
               <div class="col-lg-12">
                 <fieldset>
                   <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"

@@ -129,7 +129,7 @@ ul {
 }
 
 p {
-  font-size: 15px;
+  font-size: 20px;
   line-height: 30px;
   color: #2a2a2a;
 }
@@ -147,7 +147,7 @@ global styles
 html,
 body {
   background-color: #FF3CAC;
-  background-image: linear-gradient(225deg, #0c63a1 25%, #73c5ff 50%, #b0deff 100%); 
+  background-image: linear-gradient(225deg, #0c63a1 25%, #002036 50%, #00153b 100%); 
   background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
@@ -853,7 +853,7 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(../images/nft_back.jpg);
+  background-image: url(../images/topBg.jpg);
   padding: 226px 0px 120px 0px;
   position: relative;
   overflow: hidden;
@@ -1025,6 +1025,7 @@ Services Style
 .our-services .section-heading p {
   margin-top: 30px;
   margin-bottom: 60px;
+  font-size: 20px;
 }
 
 .our-services .progress-skill-bar {
@@ -1448,7 +1449,7 @@ Blog
 
 
 .our-blog .right-list .right-image img {
-  width: auto;
+  width: 100%;
   border-radius: 20px;
 }
 
