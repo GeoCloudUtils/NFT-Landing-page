@@ -24,40 +24,6 @@
 -->
 </head>
 
-<style>
-  .card-horizontal {
-    display: flex;
-    flex: 1 1 auto;
-  }
-
-  /* Back to top */
-  .backtotop {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    z-index: 9999;
-    display: none;
-  }
-
-  .backtotop i {
-    color: #ff7657;
-    text-align: center;
-    font-size: 25px;
-    line-height: 65px;
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    background: #fff;
-    -webkit-box-shadow: 0 31px 35px rgba(0, 0, 0, .1);
-    box-shadow: 0 31px 35px rgba(0, 0, 0, .1);
-  }
-
-  .backtotop:hover {
-    cursor: pointer;
-  }
-</style>
-
-
 <body>
   <div class="backtotop" style="display: block;">
     <a href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
@@ -76,20 +42,23 @@
   <!-- ***** Preloader End ***** -->
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" style="background-color: #001A38FF;"
+  <header class="header-area header-sticky wow slideInDown " style="background-color: #001A38FF;"
     data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <nav class="main-nav w-50 mx-auto">
+    <div class="container ">
+      <div class="row ">
+        <div class="col-lg-12 ">
+          <nav class="main-nav w-75 mx-auto ">
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section active mx-auto"><a href="#top">Home</a></li>
               <li class="scroll-to-section mx-auto"><a href="#concept">Concept</a></li>
               <li class="scroll-to-section mx-auto"><a href="#benefits">Benefits</a></li>
               <li class="scroll-to-section mx-auto"><a href="#roadmap">Roadmap</a></li>
-              <li class="scroll-to-section mx-auto"><a href="https://twitter.com/meta__m0rph "><i
+              <li class="scroll-to-section mx-auto"><a href="https://twitter.com/meta__m0rph"><i
                     class="fab fa-twitter"></i></a></li>
+              <li class="scroll-to-section">
+                <div class="main-red-button mx-auto"><a href="#contact">Contact Now</a></div>
+              </li>
             </ul>
             <a class='menu-trigger'>
               <span>Menu</span>
@@ -99,6 +68,8 @@
         </div>
       </div>
     </div>
+    <hr class="bg-white">
+    </hr>
   </header>
   <!-- ***** Header Area End ***** -->
 
@@ -109,11 +80,11 @@
           <div class="row">
             <div class="col-lg-6 mx-auto">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/morphMain.png" alt="team meeting">
+                <img src="assets/images/morphMain_empty.png" alt="team meeting">
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -122,7 +93,7 @@
   <div id="concept" class="about-us section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 align-self-center offset-lg-1">
+        <div class="col-lg-8 align-self-center">
           <div class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="section-heading">
               <h2>What is an alter <em>ego?</em><br> Unique to you</em> think of it &amp; <span>as your meta</span>
@@ -139,41 +110,29 @@
         <div class="our-portfolio section">
           <div class="container">
             <div class="row">
-              <div class="col-lg-3 col-sm-6 mx-auto">
+              <div class="col-lg-4 col-sm-6 mx-auto">
                 <a href="#">
                   <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <div class="hidden-content w-100 mx-auto">
-                      <h4>Nft name</h4>
-                      <p>Nft description!.</p>
-                    </div>
-                    <div class="showed-content">
-                      <img src="assets/images/MetaSingularity/MetaSingularity_1000_4.jpg" alt="">
+                    <div class="showed_content rounded-1 ">
+                      <img class="rounded-2 " src="assets/images/MetaSingularity/MetaSingularity_1000_4.jpg" alt="">
                     </div>
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-sm-6 mx-auto">
+              <div class="col-lg-4 col-sm-6 mx-auto">
                 <a href="#">
                   <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <div class="hidden-content w-100 mx-auto">
-                      <h4>Nft name</h4>
-                      <p>Nft description!.</p>
-                    </div>
-                    <div class="showed-content">
-                      <img src="assets/images/MetaSingularity/MetaSingularity_1000_A.jpg" alt="">
+                    <div class="showed_content">
+                      <img class="rounded-2" src="assets/images/MetaSingularity/MetaSingularity_1000_A.jpg" alt="">
                     </div>
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3 col-sm-6 mx-auto">
+              <div class="col-lg-4 col-sm-6 mx-auto">
                 <a href="#">
                   <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <div class="hidden-content w-100 mx-auto">
-                      <h4>Nft name</h4>
-                      <p>Nft description!.</p>
-                    </div>
-                    <div class="showed-content">
-                      <img src="assets/images/MetaSingularity/MetaSingularity_1000_Cosmo.jpg" alt="">
+                    <div class="showed_content">
+                      <img class="rounded-2" src="assets/images/MetaSingularity/MetaSingularity_1000_Cosmo.jpg" alt="">
                     </div>
                   </div>
                 </a>
@@ -189,25 +148,25 @@
     <div class="container">
       <div class="container-fluid mt-5">
         <section>
-          <div class="container-fluid bg-dark">
-            <div class="row">
-              <div class="col-lg-12 mx-auto mt-3">
-                <div class="card bg-transparent border-0">
-                  <div class="card-horizontal">
-                    <div class="card-body w-75">
-                      <h4 class="card-title font-weight-bold text-uppercase text-white wow bounceIn"
-                        data-wow-duration="1s" data-wow-delay="0.2s">Your metaverse alter ego unlocks benefits </h4>
-                    </div>
+          <div class="row">
+            <div class="col-lg-12 mx-auto mt-3">
+              <div class="card bg-transparent border-0">
+                <div class="card-horizontal">
+                  <div class="card-body w-75">
+                    <h4 class="card-title font-weight-bold text-uppercase text-white wow bounceIn"
+                      data-wow-duration="1s" data-wow-delay="0.2s">Your metaverse alter ego unlocks benefits </h4>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="container-fluid">
             <div class="row ">
               <div class="col-lg-12 mx-auto mt-3">
                 <div class="card wow bounceInLeft" style="background: #001A38FF;">
-                  <div class="card-horizontal">
+                  <div class="card-horizontal mb-5">
                     <div class="img-square-wrapper w-25 m-2">
-                      <img class="" src="assets/images/NFT/Original_Version_Clean1.png" alt="Card image cap">
+                      <img class="" src="assets/images/NFT/Cross_Chain_Album_POC.png" alt="Card image cap">
                     </div>
                     <div class="card-body w-75">
                       <h4 class="card-title font-weight-bold text-uppercase">Cross Chain Album </h4>
@@ -218,7 +177,8 @@
                       </p>
                     </div>
                   </div>
-                  <div class="card-horizontal m-2">
+                  <hr />
+                  <div class="card-horizontal mb-5">
                     <div class="card-body w-75">
                       <h4 class="card-title r-0 text-uppercase">Benefits from other projects</h4>
                       <p class="card-text">For many projects proof of personhood is relevant so they can drop assets to
@@ -234,6 +194,7 @@
                       <img class="" src="assets/images/benefits.png" alt="Card image cap">
                     </div>
                   </div>
+                  <hr />
                   <div class="card-horizontal">
                     <div class="img-square-wrapper w-25 m-2">
                       <img class=""
@@ -246,7 +207,6 @@
                         metaverse. That means you get a say in how we roll.
                         Or find other m0rphs based on rating and on-chain asset behaviour and form smaller groups and
                         DAO’s
-
                       </p>
                     </div>
                   </div>
@@ -336,15 +296,19 @@
     </div>
   </div>
 -->
-<br><br><br>
+  <br><br><br>
+  <div class="container">
+    <div class="wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+      <h1 class="text-white m-5">ROADMAP</span></h1>
+    </div>
+  </div>
+
   <div class="section rmap w-100">
     <div id="roadmap" class="road-map w-100 section mt-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-              <h1 class="text-white mt-2">ROADMAP</span></h1>
-            </div>
+
           </div>
         </div>
         <div class="row w-100 mt-5">
@@ -362,12 +326,11 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 align-self-center" data-wow-duration="0.5s" data-wow-delay="0.25s">
-
           <div class="section-heading">
-            <form id="contact" action="https://formsubmit.co/m0rphnftproject@gmail.com" style="background-color: #001A38FF;"
+            <form id="contact" action="https://formsubmit.co/m0rphnftproject@gmail.com" style="background-color: black;"
               method="POST">
               <div class="row">
-                <h1 class="mb-5 text-white">Interested?<br>
+                <h1 class="mb-5 text-white" style="font-size: x-large;">Interested?<br>
                   Subscribe to be the first to find out more. </h1>
                 <div class="col-lg-12">
                   <fieldset>
@@ -385,10 +348,10 @@
           </div>
         </div>
         <div class="col-lg-6" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="https://formsubmit.co/m0rphnftproject@gmail.com" style="background-color: #001A38FF;"
+          <form id="contact" action="https://formsubmit.co/m0rphnftproject@gmail.com" style="background-color: black;"
             method="POST">
             <div class="row">
-              <h1 class="mb-5 text-white">Do you have questions?
+              <h1 class="mb-5 text-white" style="font-size: x-large;">Do you have questions?
                 Leave us a message.</h1>
               <div class="col-lg-12">
                 <fieldset>
@@ -404,7 +367,7 @@
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="main-button ">Send Message</button>
+                  <button type="submit" id="form-submit" class=" ">Send Message</button>
                 </fieldset>
               </div>
             </div>
