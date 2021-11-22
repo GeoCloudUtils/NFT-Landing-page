@@ -146,8 +146,8 @@ global styles
 */
 html,
 body {
-  background-color: #001535;
-  background-image: linear-gradient(225deg, #0c63a1 25%, #002036 50%, #00153b 100%); 
+  background-color: #FF9900;
+  background-image: linear-gradient(225deg, #097054 35%, #FFDE00 50%, #6599FF 15%); 
   background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
